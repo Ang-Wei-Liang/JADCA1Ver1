@@ -1,71 +1,51 @@
 package books;
 
 public class Book {
-	
+    private String isbn;
+    private String title;
+    private String author;
+    private String publisher;
+    private String category;
+    private int quantity;
+    private double price;
 
-	private String IBSN;
-	private String Title;
-	private String Author;
-	private String Publisher;
-	private int Quantity;
-	private double Price;
-	
-	
-	public Book(String IBSN2, String title, String author, String publisher, int quantity, double price) {
-		super();
-		IBSN = IBSN2;
-		Title = title;
-		Author = author;
-		Publisher = publisher;
-		Quantity = quantity;
-		Price = price;
-	}
-	
-	public String getTitle() {
-		return Title;
-	}
+    // Constructor
+    public Book(String isbn, String title, String author, String publisher, String category, int quantity, double price) {
+        this.isbn = isbn;
+        this.title = title;
+        this.author = author;
+        this.publisher = publisher;
+        this.category = category;
+        this.quantity = quantity;
+        this.price = price;
+    }
 
-	public void setTitle(String title) {
-		Title = title;
-	}
+    // Getter methods
+    public String getIsbn() {
+        return isbn;
+    }
 
-	public String getAuthor() {
-		return Author;
-	}
+    public String getTitle() {
+        return title;
+    }
 
-	public void setAuthor(String author) {
-		Author = author;
-	}
+    public String getAuthor() {
+        return author;
+    }
 
-	public String getPublisher() {
-		return Publisher;
-	}
+    public String getPublisher() {
+        return publisher;
+    }
+    
+    public String getCategory() {
+        return category;
+    }
 
-	public void setPublisher(String publisher) {
-		Publisher = publisher;
-	}
+    public int getQuantity() {
+        return quantity;
+    }
 
-	public int getQuantity() {
-		return Quantity;
-	}
-
-	public void setQuantity(int quantity) {
-		Quantity = quantity;
-	}
-
-	public double getPrice() {
-		return Price;
-	}
-
-	public void setPrice(double price) {
-		Price = price;
-	}
-
-	public String getIBSN() {
-		return IBSN;
-	}
-	
-	public void setIBSN(String IBSN) {
-		this.IBSN = IBSN;
-	}
+    public double getPrice() {
+        return price;
+    }
 }
