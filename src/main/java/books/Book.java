@@ -1,6 +1,7 @@
 package books;
 
 public class Book {
+	private int bookid;
     private String isbn;
     private String title;
     private String author;
@@ -8,10 +9,11 @@ public class Book {
     private String category;
     private int quantity;
     private double price;
-
+    //int, String, String, String, String, String, int, double
     // Constructor
-    public Book(String isbn, String title, String author, String publisher, String category, int quantity, double price) {
-        this.isbn = isbn;
+    public Book(int bookid, String isbn, String title, String author, String publisher, String category, int quantity, double price) {
+        this.bookid = bookid;
+    	this.isbn = isbn;
         this.title = title;
         this.author = author;
         this.publisher = publisher;
@@ -20,6 +22,10 @@ public class Book {
         this.price = price;
     }
 
+    public int getBookID() {
+        return bookid;
+    }
+    
     // Getter methods
     public String getIsbn() {
         return isbn;
