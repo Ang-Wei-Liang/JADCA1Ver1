@@ -1,3 +1,3 @@
-# JADCA1Ver1
+### JADCA1Ver1
 
-Pushing from Ellipse to Github?
+> Pushing from Ellipse to Github?
